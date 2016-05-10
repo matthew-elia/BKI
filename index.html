@@ -31,7 +31,7 @@
           src: url('fonts/nobel.otf');
         }
         * {
-            font-family: 'nobel';
+            font-family: 'nobel' !important;
         }
         p, ul, li{
             font-size: 18px;
@@ -39,17 +39,20 @@
         a {
             font-size: 20px;
         }
+        h1,h2,h3,h4,h5,h6 {
+            color: #C63D24;
+        }
         .navbar-brand {
             font-size: 28px;
             font-weight: bolder;
         }
         p,ul,li {text-align: left;}
         .navbar-default {
-            background-color: #ED353F;
-            border-color: #ED353F;
+            background-color: #C63D24;
+            border-color: #C63D24;
         }
         .page-scroll {
-            color: #A7DFF9 !important;
+            color: #3CCCC2 !important;
         }
         #main-logo {
             max-height: 600px;
@@ -68,13 +71,13 @@
         }
         .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
             background-color: white !important;
-            color: #ED353F !important;
+            color: #C63D24 !important;
         }
         .navbar-default .navbar-collapse, .navbar-default .navbar-form {
             border: none;
         }
         span.icon-bar {
-            background-color: #A7DFF9 !important;
+            background-color: #3CCCC2 !important;
         }
     </style>
 
@@ -122,10 +125,10 @@
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
+        <div class="container" style="position: relative;top: calc(35%/2);">
             <div class="row text-center">
                 <div class="col-xs-10 col-xs-offset-1">
-                    <img id="main-logo" class="img-responsive animated fadeInUpBig" src="images/bklogo.png" />
+                    <img id="main-logo" class="img-responsive animated fadeInUpBig" src="images/BKI_logo.png" />
                 </div>
             </div>
         </div>
@@ -135,12 +138,12 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xs-12">
                     <h1>Our Story</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                 <p>
                     New York City’s public school system has the potential to be a model of diversity.  The 1.1 million children who attend school in New York City are a mirror image of the largest school district in the country - 41 percent are Latino, 26 percent black, 17 percent Asian and 15 percent white.  The same can be said of the socio-economic background of these students with the median household income in New York City falling around $48,000.  
 
@@ -180,7 +183,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-10 col-xs-offset-1">
                 <p>
                     Brooklyn Independent aims to be centrally located in the Gowanus area in order to meet the growing demand for middle schools in district 13 and 15.  Due to an increase in population, up 3.5% since 2011, middle schools in the surrounding area are overcrowded and there is a need for diverse and rigorous schools in the community.  
 
@@ -282,10 +285,10 @@ The apparent benefits of diversity have led college campuses and businesses to c
         //     if($('.navbar-ex1-collapse').hasClass('in')){
         //         $('.navbar-default.navbar-toggle:hover')
         //             .css('background-color', 'white !important')
-        //             .css('border', '1px solid #A7DFF9 !important'); 
+        //             .css('border', '1px solid #C63D24 !important'); 
         //     } else {
         //         $('button.navbar-toggle').css('border', 'none !important'); 
-        //         $('span.icon-bar').css('background-color','#A7DFF9');
+        //         $('span.icon-bar').css('background-color','#C63D24');
         //     }
 
         // });
