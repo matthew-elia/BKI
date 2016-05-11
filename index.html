@@ -220,7 +220,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
             <!-- kelsey jones bio -->
             <div class="row founder-bio">
                 <div class="col-md-4 col-sm-12">
-                    <img src="images/gab.jpeg" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
                 </div>
                 <div class="col-md-8 col-sm-12">
                 <p>
@@ -232,7 +232,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
             <!-- craig sini bio -->
             <div class="row founder-bio">
                 <div class="col-md-4 col-sm-12">
-                    <img src="images/gab.jpeg" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
                 </div>
                 <div class="col-md-8 col-sm-12">
                 <p>
@@ -244,7 +244,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
             <!-- maura sini bio -->
             <div class="row founder-bio">
                 <div class="col-md-4 col-sm-12">
-                    <img src="images/gab.jpeg" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
                 </div>
                 <div class="col-md-8 col-sm-12">
                 <p>
@@ -256,7 +256,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
             <!-- gabriela tejedor bio -->
             <div class="row founder-bio">
                 <div class="col-md-4 col-sm-12">
-                    <img src="images/gab.jpeg" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
                 </div>
                 <div class="col-md-8 col-sm-12">
                 <p>
@@ -278,6 +278,7 @@ The apparent benefits of diversity have led college campuses and businesses to c
     <script src="js/scrolling-nav.js"></script>
 
     <script>
+    var array = [];
         $(document).ready(function () {
             setTimeout(function() {
                 $('.navbar').removeClass('hidden');
@@ -296,8 +297,17 @@ The apparent benefits of diversity have led college campuses and businesses to c
         //     }
 
         // });
+            $(window).on('scroll', function (e) {
+               
+                if($('ul.nav.navbar-nav > li').hasClass('active')) {
+                    
+                    console.log($('ul.nav.navbar-nav > li.active > a.page-scroll[0].all.prevObject[0].all[60].innerText'));
 
-        })
+                    
+                }
+            });
+
+        });
     </script>
 
 </body>
