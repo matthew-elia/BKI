@@ -53,6 +53,13 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.board-bio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background: #fff;
+}
+
 .contact-section {
     padding-top: 60px;
     padding-bottom: 60px;
