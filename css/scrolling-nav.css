@@ -45,7 +45,7 @@ html {
 }
 
 .intro-section > * {
-    display: table !important;
+    position: absolute !important;
 }
 
 .splash-section {
@@ -55,6 +55,7 @@ html {
     padding-bottom: 60px;
     text-align: center;
     background: #fff;
+    z-index: 5;
 }
 
 .about-section {
@@ -63,7 +64,8 @@ html {
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
-    background: #3CCCC2;
+    background: #fff;
+    z-index: 4;
     /*display: none;*/
 }
 
@@ -74,6 +76,7 @@ html {
     padding-bottom: 60px;
     text-align: center;
     background: #fff;
+    z-index: 3;
     /*display: none;*/
 }
 
@@ -84,6 +87,7 @@ html {
     padding-bottom: 60px;
     text-align: center;
     background: #fff;
+    z-index: 2;
     /*display: none;*/
 }
 
@@ -94,5 +98,6 @@ html {
     padding-bottom: 60px;
     text-align: center;
     background: #fff;
+    z-index: 1;
     /*display: none;*/
 }
