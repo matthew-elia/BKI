@@ -32,7 +32,7 @@
             overflow-y:hidden;
         }
         @font-face {
-          font-family: 'nobel';
+          font-family: '';
           src: url('fonts/nobel.otf');
         }
         * {
@@ -68,8 +68,11 @@
             color: #3CCCC2 !important;
         }
         #main-logo {
-            max-height: 600px;
-            display: initial;
+            position: fixed;
+            left:200px;
+            top:200px;
+            width: calc(100% - 400px);
+            height: calc(100% - 400px);
         }
         .founder-bio {
             padding: 25px 0px 25px 0px;
@@ -118,61 +121,45 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid-fluid" style="">
-            <div class="navbar-header page-scroll hidden">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-<!--                 <a class="navbar-brand page-scroll" href="#page-top"><img src="images/navbarLogo.png" height="60px" width="65px" style="display: inline;position: relative;bottom:5px;right:5px;"> Brooklyn Independent</a> -->
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav pull-right hidden" style="position:relative;top:15px;">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#about">Story</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Location</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#founders">Founders</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#board">Board</a> -->
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<body>
+    <div class="container-fluid">
+        <button type="button" class="navbar-toggle pull-right" data-toggle=".collapse" data-target=".navbar-collapse" style="display: block">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right visible-xs">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li>
+                    <a class="page-scroll" href="#about">Story</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Location</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#founders">Founders</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#board">Board</a>
+                </li>
+            </ul>
         </div>
-        <!-- /.container -->
-    </nav>
+        <!-- /.navbar-collapse -->
+    </div>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
 
         <div id="splash" class="splash-section">
-            <div class="container-fluid" style="position: relative;top: 100px;">
+            <div class="container-fluid">
                 <div class="row text-center">
                     <div class="col-xs-10 col-xs-offset-1">
-                        <img id="main-logo" class="img-responsive hidden" src="images/BKI_logo.png" />
+                        <img id="main-logo" class="img-responsive" src="images/bkindy.svg" />
                     </div>
                 </div>
                 <br>
-                <div class="row text-center">
-                    <i class="fa fa-chevron-down hidden"></i>
-                </div>
             </div>
         </div>
 
@@ -215,38 +202,6 @@
             </div>
         </div>
 
-
-    <!-- Services Section -->
-    <div id="location" class="location-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Gowanus</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-10 col-xs-offset-1">
-                <p>
-                    Brooklyn Independent aims to be centrally located in the Gowanus area in order to meet the growing demand for middle schools in district 13 and 15.  Due to an increase in population, up 3.5% since 2011, middle schools in the surrounding area are overcrowded and there is a need for diverse and rigorous schools in the community.  
-
-                    In addition, the neighborhoods surrounding the Gowanus (Park Slope, Carroll Gardens) has an average household income twice that of the borough of Brooklyn and families are willing to pay the private school tuition, with 30% of children currently attending private school.  The surrounding areas are also rich in opportunities to provide students with extracurricular activities with 199 arts and culture organizations.
-
-                    The Gowanus is an ideal neighborhood due to its proximity to Park Slope and Carroll Gardens.  In addition, because it is not as developed as those neighborhoods we can find a location where rent is more attainable - a 5,000 square foot building in the Gowanus goes for $2-5 per square foot.
-
-                    The Gowanus offers a rich network of community resources.  We will reach out to the following organizations/ people in order to build support for Brooklyn Independent:
-                </p>    
-                <ul>
-                    <li>Whole Foods</li>
-                    <li>Gowanus by Design</li>
-                    <li>Brad Lander – New York City Council Member</li>
-                    <li>Proteus Gowanus</li>
-                    <li>Marlene Donnelly – Friends & Resident of Greater Gowanus</li>
-                </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- FOUNDER BIOS -->
     <div id="founders" class="founders-section">
         <div class="container-fluid">
@@ -259,7 +214,7 @@
             <div class="row founder-bio">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-md-4 col-xs-12">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="images/GT.png" class="img-circle founder-img" height="200px" width="200px">
                 </div>
                 <div class="col-lg-8 col-md-8 col-xs-12">
                 <p>
@@ -273,7 +228,7 @@
             <div class="row founder-bio">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2 col-md-4 col-xs-12">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
+                    <img src="images/KJ.png" class="img-circle img-responsive founder-img" >
                 </div>
                 <div class="col-lg-8 col-md-8 col-xs-12">
                 <p>
@@ -285,60 +240,7 @@
         </div>
     </div>
 
-
-    <!-- BOARD MEMBER BIOS -->
-    <div id="board" class="board-section">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>The Board</h1>
-                </div>
-            </div>
-            <!-- kelsey jones bio -->
-            <div class="row founder-bio">
-                <div class="col-lg-1"></div> 
-                <div class="col-lg-2">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
-                </div>
-                <div class="col-lg-8">
-                <p>
-                    <code>___________</code> has worked in education over the past 10 years and cannot wait to be a founding member of Brooklyn Independent.  Originally from San Diego, Kelsey earned a BS in Management and Accounting from the University of Wisconsin – Madison.  Instead of entering the business world, Kelsey was more invested in making a more profound difference on people’s lives and ended up in New York City with Teach For America.  Kelsey worked in Harlem for 3 years, earning her Masters in Secondary Math at Pace University and a Masters in Educational Leadership, Policy and Advocacy at NYU.  Kelsey joined Uncommon Schools in 2010 as a founding teacher with Ocean Hill Collegiate.  During her six years, Kelsey has taught grades 5-8, written a math curriculum for all four grades, been a Grade Level Leader for four years and an Instructional Leader for 4 years.  Kelsey’s biggest accomplishment as a teacher, though, was teaching the founding class for their four years at OHC and watching them become successful students and exceptional young adults.  Kelsey is thrilled to bring her love of math and teaching to Brooklyn Independent.
-                </p>
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-            <br>
-            <!-- kelsey jones bio -->
-            <div class="row founder-bio">
-                <div class="col-lg-1"></div> 
-                <div class="col-lg-2">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
-                </div>
-                <div class="col-lg-8">
-                <p>
-                    <code>___________</code> has worked in education over the past 10 years and cannot wait to be a founding member of Brooklyn Independent.  Originally from San Diego, Kelsey earned a BS in Management and Accounting from the University of Wisconsin – Madison.  Instead of entering the business world, Kelsey was more invested in making a more profound difference on people’s lives and ended up in New York City with Teach For America.  Kelsey worked in Harlem for 3 years, earning her Masters in Secondary Math at Pace University and a Masters in Educational Leadership, Policy and Advocacy at NYU.  Kelsey joined Uncommon Schools in 2010 as a founding teacher with Ocean Hill Collegiate.  During her six years, Kelsey has taught grades 5-8, written a math curriculum for all four grades, been a Grade Level Leader for four years and an Instructional Leader for 4 years.  Kelsey’s biggest accomplishment as a teacher, though, was teaching the founding class for their four years at OHC and watching them become successful students and exceptional young adults.  Kelsey is thrilled to bring her love of math and teaching to Brooklyn Independent.
-                </p>
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-            <!-- <div class="row founder-bio">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-2">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
-                </div>
-                <div class="col-lg-8">
-                <p>
-                    <code>___________</code> has worked in education over the past 10 years and cannot wait to be a founding member of Brooklyn Independent.  Originally from San Diego, Kelsey earned a BS in Management and Accounting from the University of Wisconsin – Madison.  Instead of entering the business world, Kelsey was more invested in making a more profound difference on people’s lives and ended up in New York City with Teach For America.  Kelsey worked in Harlem for 3 years, earning her Masters in Secondary Math at Pace University and a Masters in Educational Leadership, Policy and Advocacy at NYU.  Kelsey joined Uncommon Schools in 2010 as a founding teacher with Ocean Hill Collegiate.  During her six years, Kelsey has taught grades 5-8, written a math curriculum for all four grades, been a Grade Level Leader for four years and an Instructional Leader for 4 years.  Kelsey’s biggest accomplishment as a teacher, though, was teaching the founding class for their four years at OHC and watching them become successful students and exceptional young adults.  Kelsey is thrilled to bring her love of math and teaching to Brooklyn Independent.
-                </p>
-                </div>
-                <div class="col-lg-1"></div>
-            </div> -->
-            <br>
-        </div>
-
-    </div>
-
-    </section>
+    </section
 
     <!-- About Section -->
 
@@ -359,18 +261,8 @@
         var sectionsArray = [$('#splash'), $('#about'), $('#location'), $('#founders'), $('#board')];
         
         $(document).ready(function () {
-            
-            
-            setTimeout(function() {
-                $('.fa-chevron-down').removeClass('hidden');
-                setTimeout(function() {
-                    $('#main-logo').addClass('animated fadeInDownBig');
-                    $('#main-logo').removeClass('hidden');
-                }, 200);
-            }, 100);
-            $('.fa-chevron-down').addClass('animated fadeInDownBig');
-
-
+            $('#main-logo').addClass('animated fadeIn');
+            $('#main-logo').removeClass('hidden');
             console.log(sectionsArray);
 
           // $("body").mousewheel(function(event, delta) {
@@ -388,12 +280,12 @@
             var lock;
             $(document).bind('mousewheel', function(evt) {
                 var delta = evt.originalEvent.deltaY
+                $('#main-logo').animate({position:"fixed !important",top:"5",left:"5",height:"125",width:"125",display:"block"}, 1000, function () {$(this).css('z-index','100')});
                 if(((delta > 0 && delta < mw2 && mw2 > mw1) || (delta < 0 && delta > mw2 && mw2 < mw1)) && !lock){
                     console.log(mw1 + " " + mw2 + " " + delta)
                     // call some function here
                     console.log(i);
                     if(delta < 0 && i < 5) {
-                        sectionsArray[(i-1)].addClass('animated fadeOut');
                         sectionsArray[i].addClass('animated fadeIn');
                         i++;
 
