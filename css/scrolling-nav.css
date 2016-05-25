@@ -55,7 +55,9 @@ i.fa {
 }
 
 .intro-section > * {
-    position: absolute !important;
+    /*position: absolute !important;*/
+    display: block;
+    height: 600px !important;
 }
 
 .splash-section {
