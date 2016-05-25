@@ -31,12 +31,16 @@
         html { 
             /*overflow-y:hidden;*/
         }
+        .navbar-collapse.in {
+            overflow-y: visible !important;
+            padding-bottom: 15px;
+        }
         @font-face {
-          font-family: 'nobel';
-          src: url('fonts/nobel.otf');
+          font-family: 'lane';
+          src: url('fonts/lane-nar.ttf');
         }
         * {
-            font-family: 'nobel' !important;
+            font-family: 'lane' !important;
         }
         p, ul, li{
             font-size: 18px;
@@ -62,11 +66,15 @@
             border-color: white;
             padding-left: 30px;
             padding-right: 30px;
+            padding-bottom: 30px;
         }
 
         .page-scroll {
             color: #3CCCC2 !important;
         }
+        /*.active > a {
+            background-color: transparent !important;
+        }*/
         #main-logo {
             max-height: 600px;
             display: initial;
@@ -83,7 +91,7 @@
             border: none !important;
         }
         .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-            background-color: white !important;
+            background-color: transparent !important;
             color: #C63D24 !important;
         }
         .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -141,7 +149,7 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Story</a>
+                        <a class="page-scroll" href="#about">Mission</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#founders">Founders</a>
@@ -161,41 +169,73 @@
 
     <!-- Intro Section -->
 
-        <section id="splash" class="splash-section">
-            <div class="container-fluid" style="position: relative;top: 100px;">
-                <div class="row text-center">
-                    <div class="col-xs-10 col-xs-offset-1">
-                        <img id="main-logo" class="img-responsive" src="images/BKI_logo.svg" />
-                    </div>
-                </div>
-                <br>
-                <!-- <div class="row text-center">
-                    <i class="fa fa-chevron-down"></i>
-                </div> -->
-            </div>
-        </section>
+    <section id="splash" class="splash-section">
 
-
-        <section id="about" class="about-section">
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>Our Mission</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1">
-            <p>
-            Brooklyn Independent is middle school that believes in authentically immersing students both racially and 
-            socio-economically. Through exposure and rigor our students will be prepared to become leaders at the top 
-            Northeast high schools.
-            </p>
-                    </div>
+        <div class="container-fluid" style="position: relative;top: 100px;">
+            <div class="row text-center">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <img id="main-logo" class="img-responsive" src="images/BKI_logo.svg" />
                 </div>
             </div>
+            <br>
+            <!-- <div class="row text-center">
+                <i class="fa fa-chevron-down"></i>
+            </div> -->
+        </div>
 
-        </section>
+    </section>
+
+    <section id="about" class="about-section">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>OUR MISSION</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <p>
+                    Brooklyn Independent is middle school that believes in authentically immersing students both racially and 
+                    socio-economically. Through exposure and rigor our students will be prepared to become leaders at the top 
+                    Northeast high schools.
+                    </p>
+                    <br>
+                    <h3>DATA ON IMPORTANCE OF RACIAL AND SOCIO ECONOMIC IMMERSION:</h3>
+                    <ul>
+                        <li>
+                        New York City public schools are the most segregated in the country with half of the city's white students concentrated in just 7 percent of the schoolss    
+                        </li>
+                        <li>
+                        Out of 1800 schools, only 1 school reflects the racial and socio-economic makeup of its community    
+                        </li>
+                        <li>
+                        When students attend a diverse school, they are 10% more likely to graduate from high school. A single person’s graduation from high school saves taxpayers an average of $209,200 over the course of their lifetime.    
+                        </li>
+                        <li>
+                        In addition, when black students attend a diverse school they increase their lifetime wages by 15%.    
+                        </li>
+                    </ul>
+                    <h3>DATA FOR STRONG TEACHERS:</h3>
+                    <ul>
+                        <li>
+                        Excellent teachers have the ability to increase student’s yearly income by over $10,000 dollars.
+                        </li>
+                    </ul>
+                    <h3>DATA FOR THE IMPORTANCE OF MIDDLE SCHOOL:</h3>
+                    <ul>
+                        <li>
+                        About 5% of families have the opportunity to choose the best high school education for their children due to lack of choice in middle school.
+                        </li>
+                        <li>
+                        We believe that the path to college begins in middle school.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <!-- FOUNDER BIOS -->
     <section id="founders" class="founders-section">
@@ -208,10 +248,10 @@
             <!-- kelsey jones bio -->
             <div class="row founder-bio">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-2 col-md-4 col-xs-12">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
+                <div class="col-lg-3 col-md-4 col-xs-12">
+                    <img src="images/biopicKJ.png" class="img-responsive founder-img" height="auto" width="300px">
                 </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
+                <div class="col-lg-7 col-md-8 col-xs-12">
                 <p>
                     <b>Kelsey Jones</b> has worked in education over the past 10 years and cannot wait to be a founding member of Brooklyn Independent.  Originally from San Diego, Kelsey earned a BS in Management and Accounting from the University of Wisconsin – Madison.  Instead of entering the business world, Kelsey was more invested in making a more profound difference on people’s lives and ended up in New York City with Teach For America.  Kelsey worked in Harlem for 3 years, earning her Masters in Secondary Math at Pace University and a Masters in Educational Leadership, Policy and Advocacy at NYU.  Kelsey joined Uncommon Schools in 2010 as a founding teacher with Ocean Hill Collegiate.  During her six years, Kelsey has taught grades 5-8, written a math curriculum for all four grades, been a Grade Level Leader for four years and an Instructional Leader for 4 years.  Kelsey’s biggest accomplishment as a teacher, though, was teaching the founding class for their four years at OHC and watching them become successful students and exceptional young adults.  Kelsey is thrilled to bring her love of math and teaching to Brooklyn Independent.
                 </p>
@@ -222,10 +262,10 @@
             <!-- gabriela tejedor bio -->
             <div class="row founder-bio">
                 <div class="col-lg-1"></div>
-                <div class="col-lg-2 col-md-4 col-xs-12">
-                    <img src="http://placehold.it/200x200" class="img-circle founder-img" height="200px" width="200px">
+                <div class="col-lg-3 col-md-4 col-xs-12">
+                    <img src="images/biopicGT.png" class="img-responsive founder-img" height="auto" width="300px">
                 </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
+                <div class="col-lg-7 col-md-8 col-xs-12">
                 <p>
                     <b>Gabriela Tejedor</b> is ecstatic to be a founding member of Brooklyn Independent. She received her BA degree from New York University’s Steinhardt School of Culture, Education, and Human Development and her Masters in Teaching from Relay Graduate School. During her time at NYU, she spent four years as both a Lead Teacher and NYU Chapter Founder with the organization Artists Striving to End Poverty, a non-profit committed to exposing at-risk youth to the arts in both in the U.S. and around the world as a means to foster critical thinking and break the cycle of poverty. As a Teach for America Greater Newark Corps Member, she wrote ELA Curriculum while teaching 3rd and 4th grade at Community Charter School in Paterson. She has also worked with the International Rescue Committee as a Lead Teacher and Curriculum Writer for their Summer Institute which prepares recent refugees seeking asylum in the United States as they transition to the American school system. With her work at the NYC Department of Education, she assisted with development of the communications platform for the technology non-profit, School of One, named by Time Magazine as one of the “100 Best Innovations of 2009.” While living in Accra, Ghana she taught at La Enobal Secondary School developing original curriculum and creating an after school arts enrichment program through a grant from NYU Global Studies Program. During her time with Uncommon Schools, she taught 7th Grade Reading, was the Curriculum Specialist for 7th Grade Brooklyn Uncommon Schools, and worked as the Grade Level Leader.
                  </p>
@@ -338,8 +378,14 @@
 
         var sectionsArray = [$('#splash'), $('#about'), $('#location'), $('#founders'), $('#board')];
         
-        // $(document).ready(function () {
+        $(document).ready(function () {
             
+            if($(window).width() < 768){
+
+                $('.navbar-brand').html('<img src="images/navbarLogo.png" class="img-responsive" height="60px" width="65px" style="display: inline;position: relative;bottom:5px;right:5px;">');
+            }
+
+        });
             
             // setTimeout(function() {
             //     $('.fa-chevron-down').removeClass('hidden');
@@ -420,12 +466,6 @@
         //         $('ul.navbar-nav').addClass('animated fadeInRight');
         //     }, 200);
 
-        //     if($(window).width() < 768){
-        //         console.log($('.navbar-brand').text());
-        //         $('.navbar-brand').html('<img src="images/navbarLogo.png" class="img-responsive" height="60px" width="65px" style="display: inline;position: relative;bottom:5px;right:5px;">');
-        //     }
-
-        // });
     </script>
 
 </body>

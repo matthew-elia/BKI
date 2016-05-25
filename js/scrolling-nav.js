@@ -5,6 +5,12 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+
+    if ($(this).width() < 768) {
+        $('ul.navbar-nav').removeClass('pull-right');
+    } else {
+        $('ul.navbar-nav').addClass('pull-right');
+    }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
