@@ -91,9 +91,8 @@ i.fa {
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom:200px;
     text-align: center;
-    background: #fff;
+    background: rgba(71,208,185,0.5);
     z-index: 2;
     /*display: none;*/
 }
