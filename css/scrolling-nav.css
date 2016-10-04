@@ -87,25 +87,25 @@ i.fa {
 }
 
     #diversity-image {
-        width:65%;
+        width:55%;
         float:right;
         padding-right: 0;
         padding-bottom: 0;
     }
     #rigor-image {
-        width:65%;
+        width:55%;
         float:left;
         padding-left: 0;
         padding-bottom: 0;
     }
     #social_emotional-image {
-        width:65%;
+        width:55%;
         float:right;
         padding-right: 0;
         padding-bottom: 0;
     }
     #exposure-image {
-        width:65%;
+        width:55%;
         float:left;
         padding-left: 0;
         padding-bottom: 0;
@@ -127,8 +127,8 @@ i.fa {
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
+    background: rgba(71,208,185,0.25);
     text-align: center;
-    background: #fff;
     z-index: 2;
     /*display: none;*/
 }
@@ -136,10 +136,10 @@ i.fa {
 .board-section {
     /*height: 100%;*/
     width: 100%;
-    padding-top: 100px;
+    padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background: rgba(71,208,185,0.25);
+    background: #fff;
     z-index: 1;
     /*display: none;*/
 }
